@@ -11,6 +11,10 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <div>
+            <Route exact path="/" component={Fib}></Route>
+            <Route exact path="/otherpage" component={OtherPage}></Route>
+          </div>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
@@ -25,10 +29,6 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
-        <div>
-          <Route exact path="/" component={Fib}></Route>
-          <Route exact path="/otherpage" component={OtherPage}></Route>
-        </div>
       </div>
     </Router>
   );
